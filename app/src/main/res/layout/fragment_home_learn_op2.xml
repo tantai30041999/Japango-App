@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Home">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_ac_unit_24"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="22dp"
+                    android:textColor="@color/newWord"
+                    android:text="Dịch câu sau"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="Hôm nay thời tiết thật đẹp!"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="14dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewAnswer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/home_grid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:alignmentMode="alignMargins"
+            android:columnCount="4"
+            android:padding="14dp"
+            android:rowCount="2">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewAnswer"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"/>
+        </GridLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnCheck2"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2BA812"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="Kiểm tra">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

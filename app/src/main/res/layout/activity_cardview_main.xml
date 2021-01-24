@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="0.75"
+        android:scaleY="0.75">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <ImageView
+
+                    android:id="@+id/imgWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="442dp"
+                    android:layout_below="@+id/countWord"
+                    android:layout_weight="1"
+                    android:src="@drawable/cake"></ImageView>
+
+                <TextView
+                    android:id="@+id/pageNumberWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1/30"
+                    android:textSize="18dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/addHandBook"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/add_handbook"></Button>
+
+                    <Button
+                        android:id="@+id/speaker"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/speaker"></Button>
+                </LinearLayout>
+
+                <TableLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TableRow android:weightSum="2">
+
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/viewBackground"
+                            android:gravity="center"
+                            android:text="Từ vựng"
+                            android:textSize="16dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/viewBackground"
+                            android:gravity="center"
+                            android:text="Nghĩa"
+                            android:textSize="16dp"
+                            android:textStyle="bold"></TextView>
+                    </TableRow>
+
+                    <TableRow android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/idWord"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="16dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/meanWord"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="16dp"
+                            android:textStyle="bold"></TextView>
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

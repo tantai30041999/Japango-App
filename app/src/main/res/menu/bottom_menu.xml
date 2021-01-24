@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homePage"
+        android:icon="@drawable/ic_home"
+        android:title="" />
+    <item
+        android:id="@+id/grammar"
+        android:icon="@drawable/grammar_icon"
+        android:iconTint="@color/colorProgressbar"
+        android:title="" />
+    <item
+        android:id="@+id/vocabulary"
+        android:icon="@drawable/vocabulary_icon"
+        android:iconTint="@color/colorProgressbar"
+        android:title="" />
+    <item
+        android:id="@+id/handbook"
+        android:icon="@drawable/ic_book"
+        android:iconTint="@color/colorProgressbar"
+        android:title="" />
+</menu>

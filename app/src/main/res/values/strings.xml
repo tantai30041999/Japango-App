@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Japango</string>
+    <string name="maxim1">Hãy học 5 phút mỗi ngày bạn nhé!</string>
+    <string name="maxim2">Bạn đang dùng thời gian một cách thông minh, hãy cố gắng nhé!</string>
+    <string name="maxim3">Hãy cố gắng luyện tập và bạn sẽ đạt được kết quả bất ngờ.</string>
+    <string name="maxim4">Luyện tập nhiều hơn, thành công sẽ đến với bạn càng gần hơn</string>
+    <string name="maxim5">Con đường dẫn đến thành công là con đường do sự cố gắng mỗi ngày.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+</resources>
